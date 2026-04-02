@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rappi-mcp"
+version = "0.1.0"
+description = "MCP server for Rappi Chile — browse stores, search products, manage cart and checkout via Claude"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Bastian Girardi" }]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.26.0",
+    "requests>=2.33.0",
+    "python-dotenv>=1.2.2",
+    "websocket-client>=1.9.0",
+]
+
+[project.scripts]
+rappi-mcp = "rappi_mcp:main"
+
+[project.urls]
+Repository = "https://github.com/bgira/RappiMCP"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
