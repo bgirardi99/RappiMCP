@@ -1,5 +1,7 @@
 # RappiMCP
 
+<!-- mcp-name: io.github.bgirardi99/rappi-mcp -->
+
 ```
 Program : RappiMCP
 Author  : Bastian Girardi

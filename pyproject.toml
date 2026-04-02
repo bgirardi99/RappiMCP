@@ -21,7 +21,7 @@ dependencies = [
 rappi-mcp = "rappi_mcp:main"
 
 [project.urls]
-Repository = "https://github.com/bgira/RappiMCP"
+Repository = "https://github.com/bgirardi99/RappiMCP"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]

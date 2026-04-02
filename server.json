@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bgirardi99/rappi-mcp",
+  "title": "Rappi MCP",
+  "description": "MCP server for Rappi Chile — browse stores, search products, manage cart and checkout via Claude.",
+  "repository": {
+    "url": "https://github.com/bgirardi99/RappiMCP",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "rappi-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RAPPI_ACCESS_TOKEN",
+          "description": "Rappi access token (set automatically by rappi_auth)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "RAPPI_REFRESH_TOKEN",
+          "description": "Rappi refresh token (set automatically by rappi_auth)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
